@@ -7,7 +7,7 @@ class KalmanFilter1D:
 
         # Initial state: [position, velocity]
         self.x = np.zeros((2, 1))  # [x, v]
-        self.P = np.eye(2)         # Initial uncertainty
+        self.P = np.eye(2)         # Initial uncertainty or covariance matrix (correlation between position and velocity)
 
         # State transition model
         self.F = np.array([[1, dt],
@@ -104,4 +104,5 @@ plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
+plt.savefig('images/1D_kalman.png')
 plt.show()

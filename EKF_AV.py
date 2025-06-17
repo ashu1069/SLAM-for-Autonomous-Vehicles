@@ -145,4 +145,5 @@ if __name__ == "__main__":
     plt.title('Extended Kalman Filter - 2D Localization')
     plt.grid(True)
     plt.axis('equal')
+    plt.savefig('images/ekf_av.png')
     plt.show()

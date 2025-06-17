@@ -136,4 +136,5 @@ plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
+plt.savefig('images/2D_kalman.png')
 plt.show()
